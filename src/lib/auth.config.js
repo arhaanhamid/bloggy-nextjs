@@ -20,6 +20,8 @@ export const authConfig = {
       return session;
     },
     authorized({ auth, request }) {
+      console.log("Inside authorization");
+      console.log(auth, request);
       const user = auth?.user;
       const isOnAdminPanel = request.nextUrl?.pathname.startsWith("/admin");
       const isOnBlogPage = request.nextUrl?.pathname.startsWith("/blog");
