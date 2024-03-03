@@ -8,15 +8,18 @@ const Navbar = async () => {
   const session = await auth();
   return (
     <div className={styles.container}>
-      <Link href="/">
-        <Image
-          className={styles.logo}
-          src="/logo.png"
-          alt="logo"
-          width={100}
-          height={100}
-        />
-      </Link>
+      <span className={styles.logo}>
+        <Link href="/">
+          <Image
+            className={styles.logo_icon}
+            src="/logo.png"
+            alt="logo"
+            width={100}
+            height={100}
+          />
+        </Link>
+        <p className={styles.logo_text}>BLOGGY</p>
+      </span>
       <div>
         <Links session={session} />
       </div>

@@ -6,8 +6,18 @@
 }
 
 .logo{
+  display: flex;
+  align-items: center;
+}
+.logo_icon{
   width: 70px;
   height: 70px;
+}
+.logo_text{
+  font-size: 2em;
+  color: gray;
+  font-family: 'Courier New', Courier, monospace;
+  font-weight: bold;
 }
 
 @media (max-width: 768px) {
